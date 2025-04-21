@@ -91,12 +91,3 @@ if show_table:
         'To': [e[1] for e in edges],
         'Distance (miles)': [e[2] for e in edges]
     })
-
-# Final design prompt
-st.markdown("---")
-st.info("""🔍 Explore questions like:
-- (a) How to visualize this as a shortest-path problem?
-- (b) How does Dijkstra’s algorithm solve it?
-- (c) Can we build this logic in a spreadsheet?
-- (d) What if the distances were costs?
-- (e) What if they represented time?""")
