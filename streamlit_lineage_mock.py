@@ -1,5 +1,4 @@
 
-pip install streamlit pyvis pandas
 import streamlit as st
 from pyvis.network import Network
 import streamlit.components.v1 as components
