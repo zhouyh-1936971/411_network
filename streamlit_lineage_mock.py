@@ -61,6 +61,6 @@ for col in selected_table_cols:
 # Render the graph
 with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as tmp_file:
     tmp_path = tmp_file.name
-    net.show(tmp_path)
+    net.write_html(tmp_path)  # ✅ FIX: avoid notebook mode
     components.html(open(tmp_path, 'r', encoding='utf-8').read(), height=700)
     os.unlink(tmp_path)
